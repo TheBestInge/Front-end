@@ -1,0 +1,376 @@
+/*
+    Selector: El elemento al que le daremos estilos
+    Propiedad: Lo que vamos a cambiar
+    Valor: El nuevo valor que va a tener
+    Propiedad: Valor -> se le denomina declaración
+    Al conjunto de selectror + declaración se le llama REGLA
+
+    selector{
+        propiedad:valor;
+        propiedad2:valor;
+        propiedad3:valor;
+    }
+*/
+
+/* TIPOS DE SELECTORES
+    ~ Simples:
+        + Elementales
+            Universales -> *
+            Tipo o etiqueta -> Nombre de la etiqueta
+        + Atributo
+            ID 
+            Selector de clase
+            Otros atributos
+    ~ Compuestos:
+        Agrupados
+        Combinadores
+        Pseudoclases -  Pseudoelemntos
+*/
+
+
+/* SELECTOR DE ETIQUETA
+body{
+    background-color: rgb(134, 134, 192);
+}
+
+  SELECTOR DE ID
+#titulo{
+    background-color: aquamarine;
+}
+
+  SELECTOR DE CLASE
+.parrafo{
+    background-color: blue;
+}
+
+  SELECTOR DE ATRIBUTOS
+[href]{
+    background-color: blueviolet;
+}*/
+
+/*  FONDOS  */
+
+body {
+    /*background-color: rgb(203, 190, 216);
+    background: url(abcde.jpg);
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    Así se queda el fondo quieto 
+    y podemos bajar sin problema
+    background-position: 100px 0px;
+
+    background: url(abcde.jpg) no-repeat fixed center center ;
+    background-size: 1380px;*/
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#fondo{
+    width: 600px;
+    height: 400px;
+    background: url(abcde.jpg) no-repeat ;
+    background-size: 600px;
+}
+
+h1{
+    color:rgb(42, 148, 190);
+    font-size: 25px;
+}
+
+/*  PARA CAMBIAR COSAS POR CLASS  */
+.a{
+    color: blue;
+    font-size: 14px;
+}
+
+/*  PARA CAMBIAR COSAS POR ID  */
+#b{
+    color: blueviolet;
+}
+
+/*  GRADIENTES: Se usa un generador
+    de gradientes y se copia eso. */
+#fondo{
+    width: 500px;
+    height: 500px;
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #1e5799 0%, #2989d8 51%, #7db9e8 100%, #7db9e8 100%); 
+    background: -webkit-linear-gradient(45deg, #1e5799 0%,#2989d8 51%,#7db9e8 100%,#7db9e8 100%); 
+    background: linear-gradient(45deg, #1e5799 0%,#2989d8 51%,#7db9e8 100%,#7db9e8 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); 
+}
+
+#link{
+    color: rgb(99, 24, 150);
+    font-size: 27px;
+    text-decoration: none;
+}
+
+/*  Para que al pasar el mouse por encima haga algo*/
+#link:hover{
+    color: white;
+    font-size: 35px; 
+    background-color: rgb(99, 24, 150);
+    text-decoration: underline;
+}
+
+/* Si ya hemos visitado el link aparece
+   con las caracteristicas que ponemos aquí*/
+#link:visited{
+    color: red;
+}
+
+#texto{
+    /*Fuente*/
+    font-size: 30px;
+    font-weight: bold ;
+    text-align: center;
+    text-decoration:overline;
+    text-transform: capitalize;
+
+    letter-spacing: 3px;
+    line-height: 8
+    0px;
+}
+
+#caja{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin: 20px ;
+    border: 12px solid green;   
+    padding: 30px 0;
+}
+
+#textocaja{
+    color: white;
+}
+
+.boton{
+    background-color: #3b1552f2;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 15px 20px;
+
+    border-radius: 5px 20px 50px 100px ;
+}
+.boton:hover{
+    opacity: .8;
+}
+
+#conlink{
+    margin: 30px ;
+}
+
+#varioslinks{
+    margin: 50px;
+}
+
+/*
+    Tenemos 5 tipos de posiciones:
+    - Normal (static)(Por defecto)
+    - Relativo (relative)(Se puede mover desde el lugar en el)
+    - Absoluto(absolute)()
+    - Fijo(Fixed)(Posicion respecto a la pantalla y ahi no se mueve)
+    - Flotante(float)(Mover hacia la derecha o izquierda)
+*/
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: #1e5799;
+    font-size: 50px;
+    padding: 50px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 25%;
+}
+
+#posicionada{
+    background-color: rgb(25, 189, 52);
+    position: absolute;
+    top: 350px;
+    left: 400px;   
+}
+#fixed{
+    background-color: yellow;
+    position: fixed;
+    top: 40px;
+    left: 250;
+}
+
+.algo{
+    width: 1000px;
+    height: 200px;
+    background-color: purple;
+    padding: 10px;
+
+}
+
+#cajitader{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(70, 116, 202);
+    float: right;
+}
+
+#cajitaizq{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(146, 19, 51);
+    float: left;
+}
+
+#galeria{
+    height: 1000px;
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+.imagen{
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    opacity: 0.5;
+    vertical-align: top;
+    border: 1px solid rgb(65, 63, 63);
+}
+
+.imagen:hover{
+    border: 1px solid rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.sombra{
+    color: rgb(79, 71, 182);
+    text-shadow: 5px 5px 4px  black;
+}
+
+.cajasombra{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(124, 124, 206);
+    box-shadow: 3px 3px 3px black;
+}
+
+
+.cajaborde{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    display: inline-block;
+    padding: 10px;
+}
+
+#Cajaborde1{
+    border: 7px solid black ;
+    border-radius: 20px;
+}
+
+#Cajaborde2{
+    border: 7px dotted black;
+    border-radius: 10px 0 0 50px;
+}
+
+#Cajaborde3{
+    border: 7px dashed black;
+    border-radius: 50%;
+}
+
+#Cajaborde4{
+    border: 7px double black;
+    border-radius: 100%;
+}
+
+/*a{
+    background-color: #245c8a;
+    padding: 20px 30px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    left: 600px;
+}*/
+
+a:hover{
+    background-color: rgb(88, 152, 212);
+    padding: 25px 35px;
+}
+
+a:active{
+    background-color: black;
+}
+
+a:visited{
+    background-color: white;
+}
+
+/*ul, ol{
+    list-style: none;
+    padding: 0;
+}*/
+
+.menu{
+    list-style: none;
+    background-color: #15191d;
+    height: 300px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 400px;
+    padding: 30px;
+    display: block;
+}
+
+a{
+    background-color: #245c8a;
+    padding: 20px 30px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+}
+
+table,th,td{
+    border: 1px solid rgb(65, 60, 60); 
+    text-align: center;
+}
+
+th,td{
+    padding: 20px 10px;
+}
+th{
+    background-color: aqua;
+    border: 2px solid ;
+}
+
+table{
+    border-collapse: collapse;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    left: 300px;
+    top: 100px;
+}
+
+#formulario{
+    position: relative;
+    top: 180px;
+    padding: 100px;
+    background-color: #15191d;
+}
+
+.formulario{
+    width: 500px;
+    margin: 20px auto;
+    background-color: beige;
+}
