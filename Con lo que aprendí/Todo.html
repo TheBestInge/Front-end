@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aprendiendo</title>
+
+        <!--Forma de darle bordes a la tabla -->
+        <!-- padding es para hacer que lo que está en la tabla, se separe un poquito-->
+        <style> 
+            table,th,td{
+                border:1px solid black;
+                border-collapse: collapse;
+                padding: 8px;
+            }
+        </style>
+
+        <base href="https://DannyDeveloper.com/todo/" target="_blank">
+
+    </head>
+    <body>
+        <!--Es un titulo-->
+        <h1 id="titulo">Calmao que solo estamos poniendo una imagen... 
+            (&nbsp;una&nbsp;estupida&nbsp;imagen&nbsp;) 
+            <!--Sirve para que en la pagina no serompan
+            los espacios al apequeñar la pagina-->
+        </h1>  
+
+        <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <!--SIRVEN PARA PONER ENCABEZADOS CON DIFERENTES TAMAÑOS DE LETRAS-->
+        
+        <h1 title="&quot;Puto el que lo lea&quot;"> 
+            <!--Pone un texto cuando paso el raton por encima de este texto-->
+            No entiendo muy bien qué hace esto
+        </h1>
+
+        <h2>
+            Hola wapos
+        </h2>
+
+        <h3>
+            Qué mas?
+        </h3>
+
+        <h4>
+            Qué pasó?
+        </h4>
+
+        <h5>
+            mira que delicia tu
+        </h5>
+
+        <h6>
+            que rico pais
+        </h6>
+        <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        
+        <!--SECCIONES-->
+        
+        <section>
+            <h2> Aqui va una seccion :3 </h2>
+            
+            <article>
+                <h3>Dibujo</h3>
+                <p>El dibujo desarrolla un monton de habilidades</p>
+                <img src="Imgs/Arabe.jpg" 
+                    alt="Meme arabe" 
+                    width="500px" 
+                    height="300px">
+                <p style="color: rgb(248, 51, 238);">
+                    Un meme del mundial(salto de lineal) <br> en un color diferente.
+                    <!--Salto de linea-->
+                </p>
+                <!--Para poner una imagen debo importarla a la carpeta donde estoy trabajando
+                SI LA IMAGEN ESTÁ EN OTRA CARPETA COMO COMUNMENTE SERÁ TOCA PONER EL NOMBRE DE LA CARPETA-->
+                <!--La parte que dice ALT es para mostrar un mensaje que se verá si no carga la imagen-->
+                <!--Style es para modificar la foto-->
+                
+                <!--
+                SI QUIERO QUE AL ORPIMIR UNA IMAGEN ME LLEVE A OTRA PAGINA, PONGO LA IMAGEN DENTRO DE UN HIPERVINCULO
+                -->
+                <a href="https://codeforces.com/"> <!--LINK-->
+                    <img src="Imgs/abcde.jpg" 
+                        alt="Cerdito" 
+                        width="500px" 
+                        height="300">
+                </a> 
+
+                <!--Una etiqueta sola  TARGET---- ABRIRA EL ENLACE EN UNA PAGINA NUEVA.-->
+                <a href="https://www.google.com/"
+                    target="_blank"
+                    style="color: black;"> <!--El hipervinculo será de color negro.-->
+                    <br> Google<!--El nombre del hipervinculo-->
+                </a>
+                    
+            </article>
+
+        </section>
+
+        <!--NUEVO TIPO DE PARRAFO-->
+        <pre>
+        Nuevo tipo de parrafo,
+        Copia todo tal cual está en el codigo.
+        Piquitos en esa cola.
+        </pre>
+
+        <!--PARA PONER ALGO EN NEGRILLA-->
+
+        <p>
+            Hola esto estará en <b>NEGRITA</b> <br>
+            Hola esto estará en <strong>NEGRITA</strong>
+        </p>
+
+        <!--PARA PONER ALGO EN CURSIVA-->
+
+        <p>
+            Hola, esto está en <i>CURSIVA</i> <br>
+            Hola, esto está en <em>CURSIVA</em>  
+        </p>
+
+        <!--PARA PONER ALGO EN TEXTO TACHADO-->
+
+        <p>
+            Hola esto está en modo <del>TACHADO</del>
+        </p>
+
+        <!--PARA PONER ALGO SUBRRAYADO-->
+
+        <p>
+            Hola, esto está <ins>SUBRRAYADO</ins>
+        </p>
+
+        <!--PARA PONER UN SUBINDICE-->
+        
+        <p>
+            Aquí habrá n subindice... H<sub>2</sub>O
+        </p>
+
+        <!--PARA PONER UN EXPONENTE O SUPERINDICE-->
+
+        <p>
+            Aquí habrá un superindice... ax<sup>2</sup> + bx +c 
+        </p>
+
+        <!--TABLAS-->
+
+        <table style="width: 100%;">
+            <!--TR = filas-->
+            <!--TH = Encabezado de columanas--> 
+            <tr>
+                <th> Nombre </th>
+                <th> Apellidos </th>
+                <th> Cedula </th>
+                <th> Edad </th>
+            </tr>
+
+            <tr>
+                <td> Daniel Santiago</td>
+                <td> Rodriguez Rodriguez</td>
+                <td> 1003825997</td>
+                <td> 19 </td>
+            </tr>
+            <tr>
+                <!--Juntar dos columnas-->
+                <!--Juntar dos filas-->
+                <td colspan="2"> Daniel Santiago Rodriguez Rodriguez</td>
+                <td rowspan="2"> 1003825997</td>
+                <td> 19 </td>
+            </tr>
+            <tr>
+                <td> Daniel Santiago</td>
+                <td> Rodriguez Rodriguez</td>
+                <td> 19 </td>
+            </tr>
+        </table>
+
+        <!--       LISTAS            -->
+
+        <h1>LISTA DE SUPERMERCADO</h1>
+        
+        <!--Lista con los puntitos de la izquierda-->
+        <ul>
+            <li>Tomates</li>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Pan</li>
+            <!--Listas anidas-->
+            <li>
+                Frutas:
+                <ul>
+                    <li>Peras</li>
+                    <li>Manzanas</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!--Lista con los numeros de la izquierda-->
+        <ol>
+            <li>Tomates</li>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Pan</li>
+            <!--Listas anidas-->
+            <li>
+                Frutas:
+                <ol>
+                    <li>Peras</li>
+                    <li>Manzanas</li>
+                </ol>
+            </li>
+        </ol>
+
+        <!--   FORMULARIOS   -->
+
+        <!--    Reciben entradas de texto     -->
+        <form >
+            Nombre: <br>
+            <input type="text" name="FIrstname"><br>
+            Apellidos:<br>
+            <input type="text" name="lastname"><br>
+
+        <!--    Una lista para seleccionar     -->
+            <input type="radio" name="gender" value="male" checked> Hombre <br>
+            <input type="radio" name="gender" value="female" > Mujer <br>
+            <input type="radio" name="gender" value="male" > Otro<br>
+            <input type="submit" value="Enviar"><br><br>
+        </form>
+        <h1>Mi formulario favorito</h1>
+        <form action="URL DONDE SE ENVIARÁ EL FORMULARIO">
+            <!--Agrupar datos relacionados dentro de un formulario-->
+            <fieldset>
+                <!--Nombre del formulario-->
+                <legend>Informacion personal:</legend>
+                
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="Firstname"><br>
+                <label for="apellido">Apellido</label>
+                <input id="apellido" type="text" name="lastname"><br>
+                
+                <label for="genero">Genero:</label>     
+                <fieldset id="genero">
+                    <input id="masculino" type="radio" name="gender" value="male" checked>
+                    <label for="masculino">Masculino</label> <br>
+
+                    <input id="femenino" type="radio" name="gender" value="female">
+                    <label for="femenino">Femenino</label><br>
+                    
+                    <input id="otro" type="radio" name="gender" value="male" >
+                    <label for="otro">Otro</label><br>
+                </fieldset><br>
+                
+                <!--OTRO TIPO DE LISTA MUCHO MAS CHIMBA-->
+                <label for="A">COLORES MAS CHIMBAS</label>
+                <input list="A">
+                <datalist id="A">
+                    <option>Rojo</option>
+                    <option>Verde</option>
+                    <option>Amarillo</option>
+                    <option>Morado</option>
+                </datalist><BR></BR>
+
+                <fieldset>
+                    <legend>Seleccionar mas de una opcion</legend>
+
+                    <input id="red" type="checkbox" name="Red" value="red">
+                    <label for="red">Rojo</label>
+                    
+                    <input id="red" type="checkbox" name="Red" value="red">
+                    <label for="red">Rojo</label>
+
+                    <input id="red" type="checkbox" name="Red" value="red">
+                    <label for="red">Rojo</label>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </fieldset>
+            
+        </form><br>
+
+        <h2>Otro formulario4</h2>
+        <form action="">
+            
+            <label for="correo">Email</label><!--  Etiqueta para lo que se va a ingresar  -->
+            <input type="iemail" id="correo" name="Email">
+            <br>
+            <!--SELECCION DESPLEGABLE-->
+            <label for="colores">Elige un bendito color: </label>
+            <select name="ALGO" id="colores">
+                <option value="red">Rojo</option>
+                <option value="green">Verde</option>
+                <option value="yellow">Amarillo</option>
+            </select>
+            <br>
+            <!--CAJA DE TEXTO-->
+            <textarea name="caja" id="caja" cols="30" rows="10"></textarea>
+            <br>
+            <button type="submit">Boton</button>
+
+            <br><br><br>
+
+            <!--CONTRASEÑAS-->
+            <br>
+            <label for="contraseña">Contraseña</label>
+            <input type="password">
+            <br> 
+            <!--RESETEAR-->
+            <input type="reset" value="RESETEAAAAAAR">
+        </form>
+          
+        <h1>TIPOS DE ENTRADAS DIFERENTES</h1>
+
+        <!--INGRESAR UN COLOR-->
+        <input type="color" name="color"><br>
+
+        <!--INGRESAR FECHAS-->
+        <input type="date" name="date"><br>
+
+        <!--INGRESAR UNA CARPETA O ARCHIVO-->
+        <input type="file" name="file"><br>
+
+        <!--INGRESAR UN NUMERO-->
+        <input type="number" name="numero" max="12" min="1"><br>
+
+        <!--BARRA DE SELECCION-->
+        <input type="range" name="barra" min="1" max="100"><br>
+
+        <!--CREAR UNA BUSQUEDA-->
+        <input type="search" name="search">
+
+        <!--UNA URL-->
+        <input type="url" name="url">
+
+        <h1>ATRIBUTOS DE LOS INPUT</h1>
+
+        <input type="text" name="nombre" 
+               value="Ingrese aqui su nombre"
+               size="5"
+               maxlength="10"
+               placeholder="NOMBRE"> <!--UN TEXTO EN GRIS DE FONDO DE UN IMPUT-->
+        
+        <!--PARA QUE RECIBA MAS DE UN ARCHIVO-->
+        <input type="file" multiple>
+
+        <!--UN INPUT QUE SIN ESO NO SE PUEDE ENVIAR EL FORMULARIO-->
+        
+        <input type="text" name="algo" placeholder="Ponga algo" required><br><br><br>
+        <input type="submit">
+        <input type="number" name="numero" id="ja" step="3">   
+        <input type="text" name="texto" id="de" autofocus > 
+        <!--HACE QUE CUANDO SE RECARGUE LA PAGINA SE ENFOQUE EN ESE INPUT-->   
+        
+        <!--VIDEOS-->
+        
+        <video type="video/mkv" src="Video.mkv" height="300" controls>
+        </video>
+        <!--CON AUTOPLAY y MUTED SE PUEDEN AGREGAR OTRAS propiedades AL VIDEO-->
+        <!--INSERTAR UN VIDEO DE YOUTUBE-->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CGV9CuIUtwk" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe><br>
+
+        <!--CREAR CITAS PEQUEÑAS-->
+        <!--Pueden ir dentro de un parrafo-->
+        <q>Hola, esto va entre comillas</q>
+
+        <!--CREAR CITAS LARGAS-->
+        <blockquote cite="AQUI VA LA URL DE DONDE SALIO">
+            Una cita muy larga puede
+            llevar textos demaciado grandes
+        </blockquote>
+
+        <!--ABREVIACIONES-->
+        <abbr title="Programacion orientada a objetos">
+            POO
+        </abbr>
+        
+        <!--INFORMACION DE CONTACTO-->
+
+        <address>
+            Daniel Rodriguez <br>
+            Visita mi ig: Dann1_07 <br>
+            Direccion: No15 sea02 sapoA <br>
+        </address>
+
+        <!--TITULO DE ALGUNA OBRA IMPORTANTE-->
+
+        <cite>
+            Mil años de soledad
+        </cite>
+
+        <!--
+            Elemento picture, nos permite mostrar
+            diferentes imagenes en diferentes dispositivos
+            que tengan diferente tamaño.
+
+            Se utiliza en dos casos: ancho de banda y formato de imagen.
+
+            Para el formato de imagen, si el navegador 
+            tratará de reconocer los diferentes tipos de imagen. 
+        -->
+
+        <picture>
+            <source media="(min-width: 500px)" srcset="abcde.jpg">
+            <source media="(min-width: 300px)" srcset="Arabe.jpg">
+        </picture>
+
+        <h1>Este titulo tiene algo <span style="color: red;">importante</span>, picos.</h1>
+
+        <!--Creando Layouts
+        Es la forma en como se va a distribuir
+        la pagina web.
+        -->
+
+        <!--LAYOUT-->
+
+        <header>Encabezado de un documento</header>
+        <nav>Enlaces de navegacion</nav>
+        <section></section>
+        <div></div>
+        <article></article>
+        <aside>Contenido al lado del contenido</aside>
+        <footer>Pie de pagina</footer>
+        <details>Detalles adicionales</details>
+        <summary>Encabezado para el DETAILS</summary>
+
+        <img src="imgs/layouts.PNG" alt="">
+
+        <header>
+            <h1>Esto es un header</h1>
+            <p>que mamera tanta vaina, quien invento todo esto?</p>
+        </header>
+
+        <!--Solo para enlaces de navegación-->
+        
+        <nav>
+            <a href="https://www.google.com">G</a>
+            <a href="https://www.xnxx.com">X</a>
+            <a href="https://www.pornhub.com">P</a>
+        </nav>
+
+        <aside>
+            <h4>JMMMMMMMMM</h4>
+            <p>hola mis hermosas personas</p>
+        </aside>
+
+        <img src="imgs/abcde.jpg" alt="Este es el nombre creo" style="width: 128px ; height: 200px;">
+
+        <!--Crear una imagen de fondo
+            Para el fondo de la pagina 
+            es la misma vuelta pero en el body
+        -->
+        <div style="background-image:url('Imgs/Arabe.jpg') ;">
+            <h1>Imagen de fondo</h1>
+        </div>
+
+        <!--Para cuando se crea un div
+            toca poner siempre el atributo class
+            asi se identificará eso
+        -->
+
+        <!--Para hacer hipervinculos entre la misma pagina
+            y que si se presiona en el enlace se mueve el navegador
+            hasta esa parte de la pagina web
+        -->
+
+        <a href="#titulo">Ir al titulo 1</a>
+        <a href="Todo.html#titulo">Ir al primer titulo</a>
+
+        <!--HACER IFRAMES
+            Desde aqui se pondran ver otras
+            paginas en un cuadro
+        -->
+
+        <iframe src="https://www.google.com" frameborder="1"></iframe>
+
+        <!--Para añadir CSS a mi pagina...
+            hay 3 tipos de formas: En linea,
+            interno y externo.
+            
+            Lo mas usado será un archivo externo
+            unido a la pagina.
+
+            Eso se hace en el head poniendo un link asi:
+            <link rel="stylesheet" type="text/css" href="style.css"> 
+        -->
+        
+        <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            CARACTERES ESPECIALES
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <br>
+        &copy; <!--COMENTARIO: Para el simbolo de copyright-->
+        &lt; <!-- < -->
+        &gt; <!-- Es para escribir un mayor que. -->
+        &amp; <!-- & -->
+    </body>
+</html> 

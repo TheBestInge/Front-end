@@ -3,6 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #superior{
     background-color: rgb(47, 29, 63);
@@ -13,8 +14,6 @@ body{
     top: 0px;
 }
 #FAQ{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
     background-color: antiquewhite;
     width: 400px;
     height: 400px;
