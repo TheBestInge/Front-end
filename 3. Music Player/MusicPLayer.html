@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="principal" class="bg-hero-bg flex h-screen justify-center items-center font-inter">
+        <img src="offline feid.png" alt="offline Feid" class="imagen">
+        <div class="mt-4 mb-6">
+            <h1 class="title text-primary-2 text-base text-center">Offline</h1>
+            <h2 class="author text-secundary-2 text-center text-xs mt-1">Young Miko & Feid</h2>
+        </div>
+        <!--Aun no entiendo este pedazo-->
+        <!--Contadores-->
+        <div class="time w-full flex justify-between">
+            <span class="text-[10px] text-secundary-2">0:00</span>
+            <span class="text-[10px] text-secundary-2">0:00</span>
+        </div>
+
+        <!--Barra de progreso-->
+        <div class="progress-area cursor-pointer w-full h-1 bg-primary-2 rounded-full">
+            <div class="w-0 progress-bar bg-primary h-full rounded-full transition-[width] duration-100"></div>
+            <audio id="main-audio"></audio>
+        </div>
+
+        <!--Botones-->
+        <div class="flex gap-5 pt-9 pb-2">
+            <button class="prev">
+                <img src="./src/assets/Stop_and_play_fill-1.svg" alt="prev">
+            </button>
+
+            <button class="play-pause flex">
+                <img class="bg-primary size-[50px] rounded-full" src="./src/assets/Play_fill.svg" alt="Play_fill">
+            </button>
+
+            <button class="next">
+                <img src="./src/assets/Stop_and_play_fill.svg" alt="next">
+            </button>
+        </div>
+
+    </div>
+</body>
+</html>
