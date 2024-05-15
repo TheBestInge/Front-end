@@ -1,0 +1,9 @@
+/*  Text-align:center
+*/
+label[for="visitante"]{
+    color: red;
+
+}
+body{
+    background-color: blue;
+}
